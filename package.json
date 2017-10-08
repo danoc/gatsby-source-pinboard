@@ -11,16 +11,13 @@
   "repository": "git@github.com:danoc/danoc.me.git",
   "author": "Daniel O'Connor <daniel@danoc.me>",
   "license": "MIT",
-  "dependencies": {
-    "asyncawait": "^1.0.6",
-    "babel-cli": "^6.26.0",
+  "dependencies": {},
+  "devDependencies": {
     "babel-preset-env": "^1.6.0",
     "crypto": "^1.0.1",
-    "node-fetch": "^1.7.3"
-  },
-  "devDependencies": {
     "husky": "^0.14.3",
     "lint-staged": "^4.2.3",
+    "node-fetch": "^1.7.3",
     "prettier": "^1.7.4"
   },
   "lint-staged": {
