@@ -4,15 +4,17 @@
   "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "scripts": {
     "start": "babel src --out-dir dist/",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "release": "npm run start && npm version && npm publish"
   },
   "files": ["dist/"],
-  "main": "gatsby-node.js",
-  "repository": "git@github.com:danoc/danoc.me.git",
+  "main": "dist/gatsby-node.js",
+  "repository": "danoc/gatsby-source-pinboard",
   "author": "Daniel O'Connor <daniel@danoc.me>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.0",
     "crypto": "^1.0.1",
     "husky": "^0.14.3",
