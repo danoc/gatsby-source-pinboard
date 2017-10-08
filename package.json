@@ -1,7 +1,7 @@
 {
   "name": "gatsby-source-pinboard",
   "version": "0.0.0",
-  "description": "Grab bookmarks from Pinboard for use with Gatsby.",
+  "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "main": "gatsby-node.js",
   "repository": "git@github.com:danoc/danoc.me.git",
   "author": "Daniel O'Connor <daniel@danoc.me>",
