@@ -5,7 +5,7 @@
   "scripts": {
     "start": "babel src --out-dir dist/",
     "precommit": "lint-staged",
-    "release": "npm run start && npm version && npm publish"
+    "release": "yarn start && yarn publish"
   },
   "files": ["dist/"],
   "main": "dist/gatsby-node.js",
