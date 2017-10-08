@@ -3,12 +3,11 @@
   "version": "0.1.1",
   "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "scripts": {
-    "start": "babel src --out-dir dist/",
+    "start": "babel src --out-dir .",
     "precommit": "lint-staged",
     "release": "yarn start && yarn publish"
   },
-  "files": ["dist/"],
-  "main": "dist/gatsby-node.js",
+  "main": "gatsby-node.js",
   "repository": "danoc/gatsby-source-pinboard",
   "author": "Daniel O'Connor <daniel@danoc.me>",
   "license": "MIT",
