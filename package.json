@@ -3,9 +3,9 @@
   "version": "0.1.2",
   "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "scripts": {
-    "start": "babel src --out-dir .",
-    "precommit": "lint-staged",
-    "release": "yarn start && yarn publish"
+    "test": "eslint . --ignore-path .gitignore --ext .jsx --ext .js",
+    "prepublishOnly": "babel src --out-dir .",
+    "release": "git checkout master && git pull && yarn test && yarn publish && git push --follow-tags"
   },
   "main": "gatsby-node.js",
   "repository": "danoc/gatsby-source-pinboard",
@@ -13,16 +13,34 @@
   "license": "MIT",
   "dependencies": {
     "crypto": "^1.0.1",
-    "node-fetch": "^1.7.3"
+    "node-fetch": "^2.2.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.2.3",
-    "prettier": "^1.7.4"
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "husky": "^1.0.0-rc.15",
+    "lint-staged": "^7.3.0",
+    "prettier": "1.14.3"
   },
+  "keywords": [
+    "gatsby",
+    "pinboard",
+    "gatsby-plugin"
+  ],
   "lint-staged": {
-    "*.{js,json,css}": ["prettier --write", "git add"]
+    "*.{js,jsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
