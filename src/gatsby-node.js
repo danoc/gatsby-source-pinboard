@@ -1,8 +1,8 @@
 const crypto = require("crypto");
 const fetch = require("node-fetch");
 
-exports.sourceNodes = async ({ boundActionCreators }, { authToken, tags }) => {
-  const { createNode } = boundActionCreators;
+exports.sourceNodes = async ({ actions }, { authToken, tags }) => {
+  const { createNode } = actions;
   const tagsQuery = tags ? `&tag=${tags}` : "";
 
   const res = await fetch(
