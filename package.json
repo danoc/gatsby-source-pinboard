@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-pinboard",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "scripts": {
     "test": "eslint . --ignore-path .gitignore --ext .jsx --ext .js",
