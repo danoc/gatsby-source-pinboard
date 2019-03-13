@@ -1,7 +1,5 @@
 # gatsby-source-pinboard
 
-Note: This plugin requires Gatsby v2.
-
 To use, install the package and add to `gatsby-config.js`:
 
 ```bash
@@ -21,7 +19,7 @@ npm install gatsby-source-pinboard
 
 You can query the data with:
 
-```js
+```graphql
 allPinboardBookmark(limit: 3) {
     edges {
         node {
