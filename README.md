@@ -1,5 +1,7 @@
 # gatsby-source-pinboard
 
+[![NPM version](https://badgen.net/npm/v/gatsby-source-pinboard)](https://www.npmjs.com/package/gatsby-source-pinboard) [![Build status](https://badgen.net/travis/danoc/gatsby-source-pinboard)](https://travis-ci.com/danoc/gatsby-source-pinboard)
+
 To use, install the package and add to `gatsby-config.js`:
 
 ```bash
