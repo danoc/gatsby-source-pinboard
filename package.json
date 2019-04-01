@@ -3,6 +3,8 @@
   "version": "0.1.6",
   "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "files": [
+    "index.js",
+    "index.js.map",
     "gatsby-node.js",
     "gatsby-node.js.map"
   ],
