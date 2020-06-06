@@ -12,7 +12,7 @@ exports.sourceNodes = async ({ actions }, { authToken, tags }) => {
   const data = await res.json();
 
   // Process data into nodes.
-  data.posts.forEach(post => {
+  data.posts.forEach((post) => {
     const jsonString = JSON.stringify(post);
 
     const gatsbyNode = {
@@ -34,8 +34,8 @@ exports.sourceNodes = async ({ actions }, { authToken, tags }) => {
         contentDigest: crypto
           .createHash("md5")
           .update(jsonString)
-          .digest("hex")
-      }
+          .digest("hex"),
+      },
     };
 
     createNode(gatsbyNode);

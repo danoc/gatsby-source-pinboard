@@ -30,10 +30,10 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-import": "^2.14.0",
-    "husky": "^1.0.0-rc.15",
+    "husky": "^4.2.5",
     "np": "^4.0.2",
-    "prettier": "1.16.4",
-    "pretty-quick": "^1.10.0"
+    "prettier": "2.0.5",
+    "pretty-quick": "^2.0.1"
   },
   "peerDependencies": {
     "gatsby": "^2.0.0"
