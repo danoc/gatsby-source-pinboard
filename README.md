@@ -1,6 +1,6 @@
 # gatsby-source-pinboard
 
-[![NPM version](https://badgen.net/npm/v/gatsby-source-pinboard)](https://www.npmjs.com/package/gatsby-source-pinboard) [![Build status](https://badgen.net/travis/danoc/gatsby-source-pinboard)](https://travis-ci.com/danoc/gatsby-source-pinboard)
+[![NPM version](https://badgen.net/npm/v/gatsby-source-pinboard)](https://www.npmjs.com/package/gatsby-source-pinboard) [![Test build status](https://github.com/danoc/gatsby-source-pinboard/workflows/Test/badge.svg)](https://github.com/danoc/gatsby-source-pinboard/actions?query=workflow%3ATest)
 
 To use, install the package and add to `gatsby-config.js`:
 
