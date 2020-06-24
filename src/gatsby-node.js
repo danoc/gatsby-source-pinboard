@@ -9,7 +9,18 @@ exports.sourceNodes = async ({ actions }, { authToken, tags }) => {
     // https://pinboard.in/api/#posts_recent
     `https://api.pinboard.in/v1/posts/recent?auth_token=${authToken}&format=json&count=100${tagsQuery}`
   );
-  const data = await res.json();
+
+  // We'd normally use `res.json()`, but a Pinboard API bug prevents this from
+  // working.
+  // https://twitter.com/Pinboard/status/1275764946182144002
+  // https://github.com/node-fetch/node-fetch/issues/541
+  let text = await res.text();
+
+  if (text.charCodeAt(0) === 0xfeff) {
+    text = text.substr(1);
+  }
+
+  const data = JSON.parse(text);
 
   // Process data into nodes.
   data.posts.forEach((post) => {
