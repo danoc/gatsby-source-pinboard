@@ -1,6 +1,6 @@
 {
   "name": "gatsby-source-pinboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Grab recent bookmarks from Pinboard for use within Gatsby.",
   "files": [
     "index.js",
