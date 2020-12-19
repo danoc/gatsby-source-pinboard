@@ -30,7 +30,6 @@
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
-    "husky": "^4.2.5",
     "np": "^6.2.4",
     "prettier": "2.0.5",
     "pretty-quick": "^2.0.1"
@@ -42,10 +41,5 @@
     "gatsby",
     "pinboard",
     "gatsby-plugin"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
-  }
+  ]
 }
