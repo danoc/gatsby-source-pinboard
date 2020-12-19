@@ -12,9 +12,8 @@
     "test": "yarn test:eslint && yarn test:prettier",
     "test:eslint": "eslint . --ignore-path .gitignore --ext .jsx --ext .js",
     "test:prettier": "prettier \"**/*.{js,jsx,css,scss,json,md,mdx,html}\" --list-different",
-    "prepublishOnly": "babel src --out-dir . --source-maps",
     "format": "prettier \"**/*.{js,jsx,css,scss,json,md,mdx,html}\" --write",
-    "release": "np"
+    "release": "yarn install --frozen-lockfile && yarn test && yarn babel src --out-dir . --source-maps && yarn changeset publish"
   },
   "repository": "danoc/gatsby-source-pinboard",
   "author": "Daniel O'Connor <daniel@danoc.me>",
@@ -26,11 +25,11 @@
     "@babel/cli": "^7.10.3",
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
+    "@changesets/cli": "^2.12.0",
     "eslint": "^7.3.1",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
-    "np": "^6.2.4",
     "prettier": "2.0.5",
     "pretty-quick": "^2.0.1"
   },
